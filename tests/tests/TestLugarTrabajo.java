@@ -164,16 +164,16 @@ public class TestLugarTrabajo {
         assertEquals(Integer.valueOf(20), tienda.getInventario().get("Sombreros"));
         
         assertTrue(tienda.agregarProducto("Camisetas", 30));
-        assertEquals(Integer.valueOf(80), tienda.getInventario().get("Camisetas")); // 50 + 30
+        assertEquals(Integer.valueOf(80), tienda.getInventario().get("Camisetas")); 
         
         assertTrue(tienda.removerProducto("Camisetas", 20));
-        assertEquals(Integer.valueOf(60), tienda.getInventario().get("Camisetas")); // 80 - 20
+        assertEquals(Integer.valueOf(60), tienda.getInventario().get("Camisetas"));
         
         assertTrue(tienda.removerProducto("Sombreros", 20));
         assertFalse(tienda.getInventario().containsKey("Sombreros"));
         
         assertFalse(tienda.removerProducto("Camisetas", 100));
-        assertEquals(Integer.valueOf(60), tienda.getInventario().get("Camisetas")); // Sin cambios
+        assertEquals(Integer.valueOf(60), tienda.getInventario().get("Camisetas"));
     }
     
     @Test

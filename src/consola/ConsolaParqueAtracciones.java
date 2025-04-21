@@ -187,8 +187,6 @@ public class ConsolaParqueAtracciones {
                 tiquetesPorId.put(tiquete.getId(), tiquete);
             }
 
-            persistenciaUsuarios.asociarTiquetesAClientes(clientes, tiquetes);
-
             System.out.println("Datos cargados exitosamente:");
             System.out.println("- Atracciones: " + atracciones.size());
             System.out.println("- Espectáculos: " + espectaculos.size());

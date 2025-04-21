@@ -191,9 +191,4 @@ public class PersistenciaUsuarios {
         
         return null;
     }
-    
-    
-    public void asociarTiquetesAClientes(List<Cliente> clientes, List<modelo.tiquetes.Tiquete> tiquetes) throws UsuarioException {
-
-    }
 }
